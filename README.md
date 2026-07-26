@@ -113,7 +113,25 @@ Name : Windows 8.1
 Description : Windows 8.1
 Size : 13,116,079,066 bytes
 
-aftee you know the Index and Choosed the editiom of windows you wanted to use Type this command in  CMD
+after you know the Index and Choosed the editiom of windows you wanted to use Type this command in CMD
+
+dism /Export-Image /SourceImageFile:"sourcepath" /SourceIndex:X /DestinationImageFile:"exportpath" /compress:max /checkintegrity
+
+SourcePath : THE ISO or USB FLASH DRIVE OR CD You will extract the Index of The Install.wim File
+
+exportpath: Where you gonna save the new Install.wim file 
+
+in exportpath when you type for example D:/Thewimfile/ dont forget to add the install.wim at the end of exportpath (D:/Thewimfile/install.wim then wait till it says completed AND DONT CLOSE OR INTRUPT IT EVEN IF IT REACHES 100% OR ELSE WHEN YOU TRY TO CHOOSE THE EDITION OF WINDOWS YOU WANNA USE IT WILL GIVE A ERROR ABOUT MICROSOFT LICENSE
 
 now if you gonna Add Windows 7 and Vista in a Windows 10 / 11 PE Install.wim it will install windows normally but once Windows 7 Or Windows Vista Starts Booting it will BugCheck (BSOD) Witht the Stopcode:0x0000005C (0x000000000000010B ,0x0000000000000003 , 0x0000000000000000 ,0x0000000000000000)
 (HAL_INITIALIZATION_FAILED)Which It means Windows failed while initializing the Hardware Abstraction Layer (HAL) very early during boot.(The Windows PE environment or boot files weren't compatible with what Setup expected) because the Win10PE is trying to boot windows 7 and vista in UEFI mode but win 7 and vista only support LegacyBoot Not UEFI Frimware Unlese if you do Some Modefications which i wont talk about here 
+
+3rd Step : AnyBurn
+
+now make sure you have anyburn Installed if not Download it 
+
+AnyBurn: https://www.anyburn.com/download.htm
+
+after you installed Anyburn Run it and choose "Edit Image File" and select your ISO file then click "Next" 
+
+go to sources and find install.wim click on "Remove" to remove the old install.wim from the ISO then click "Add" to put your new install.wim File to the ISO then click next and rename it to "WindowsUltimateISO.iso" or you can just name it anything you want like All in One Windows Version or anything you want in general and there you have it A WINDOWS ISO with your Favourate Windows Versions 
