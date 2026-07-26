@@ -1,0 +1,4 @@
+Commands of DISM
+to check the index of Install.wim   dism /Get-ImageInfo /ImageFile:"wimpath"
+
+to make the new install.wim   dism /Export-Image /SourceImageFile:"sourcepath" /SourceIndex:X /DestinationImageFile:"exportpath" /compress:max /checkintegrity
