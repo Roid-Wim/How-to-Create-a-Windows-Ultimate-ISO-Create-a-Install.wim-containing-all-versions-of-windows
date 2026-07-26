@@ -31,6 +31,8 @@ Windows XP Doesnt Support Install.wim Windows Longhorn Does
 Step 2 : DISM Commands
 Mount Your ISOs and Remember thier Drive Letter (Example G: , H: , I:)
 
+RUN COMMAND PROMPT AS ADMINISTRATOR OR ELES THE COMMAND WONT WORK
+
 Now the 1st command is to locate the Drive
 
 G:/
@@ -110,6 +112,8 @@ Index : 2
 Name : Windows 8.1
 Description : Windows 8.1
 Size : 13,116,079,066 bytes
+
+aftee you know the Index and Choosed the editiom of windows you wanted to use Type this command in CMD
 
 now if you gonna Add Windows 7 and Vista in a Windows 10 / 11 PE Install.wim it will install windows normally but once Windows 7 Or Windows Vista Starts Booting it will BugCheck (BSOD) Witht the Stopcode:0x0000005C (0x000000000000010B ,0x0000000000000003 , 0x0000000000000000 ,0x0000000000000000)
 (HAL_INITIALIZATION_FAILED)Which It means Windows failed while initializing the Hardware Abstraction Layer (HAL) very early during boot.(The Windows PE environment or boot files weren't compatible with what Setup expected) because the Win10PE is trying to boot windows 7 and vista in UEFI mode but win 7 and vista only support LegacyBoot
