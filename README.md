@@ -1,4 +1,4 @@
-Well Hello there Nice to Meet You Guys today iam gonna to show you how to Make a Windows Ultimate ISO Using DISM And ANYBurn
+Well Hello there Nice to Meet You Guys today iam gonna to show you how to Make a Windows Install.wim File Using DISM And ANYBurn
 
 Steps 
 
@@ -136,3 +136,12 @@ AnyBurn: https://www.anyburn.com/download.htm
 after you installed Anyburn Run it and choose "Edit Image File" and select your ISO file then click "Next" 
 
 go to sources and find install.wim click on "Remove" to remove the old install.wim from the ISO then click "Add" to put your new install.wim File to the ISO then click next and rename it to "WindowsUltimateISO.iso" or you can just name it anything you want like All in One Windows Version or anything you want in general and there you have it A WINDOWS ISO with your Favourate Windows Versions 
+
+
+Additions :
+
+ 
+you can name it WindowsUltimateVersion or All in One Windows Versions or AIOWV
+also if you gonna use Rufus just select the ISO file you Edited and let it start the process
+
+if you gonna use Ventoy Copy it and paste it or Drag it to your Ventoy USB 
